@@ -67,6 +67,29 @@ const resources = {
           infra: "Database & Infrastructure",
         },
       },
+      projects: {
+        badge: "Portafolio",
+        title: "Proyectos Destacados",
+        subtitle:
+          "Una muestra de los sistemas que hemos diseñado y construido de principio a fin.",
+        demoLabel: "Demo En Vivo",
+        codeLabel: "Código Fuente",
+        oilflow: {
+          title: "OilFlow 360",
+          description:
+            "Plataforma SaaS para el monitoreo en tiempo real de operaciones en la industria petrolera.",
+        },
+        portfolio: {
+          title: "ReApps & Systems Web",
+          description:
+            "Portafolio corporativo de alto rendimiento, con soporte multi-idioma y diseño a medida.",
+        },
+        ecommerce: {
+          title: "E-Commerce & ERP App",
+          description:
+            "Sistema full-stack de gestión y ventas, con panel administrativo e inventario en tiempo real.",
+        },
+      },
     },
   },
   en: {
@@ -130,6 +153,29 @@ const resources = {
           frontend: "Frontend",
           backend: "Backend & API",
           infra: "Database & Infrastructure",
+        },
+      },
+      projects: {
+        badge: "Projects",
+        title: "Featured Projects",
+        subtitle:
+          "A sample of the systems we've designed and built from the ground up.",
+        demoLabel: "Live Demo",
+        codeLabel: "Source Code",
+        oilflow: {
+          title: "OilFlow 360",
+          description:
+            "SaaS platform for real-time monitoring of oil industry operations.",
+        },
+        portfolio: {
+          title: "ReApps & Systems Web",
+          description:
+            "High-performance corporate portfolio with multi-language support and custom design.",
+        },
+        ecommerce: {
+          title: "E-Commerce & ERP App",
+          description:
+            "Full-stack sales and management system with an admin dashboard and real-time inventory.",
         },
       },
     },
