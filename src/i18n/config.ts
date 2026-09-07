@@ -25,6 +25,37 @@ const resources = {
         ariaEs: "Cambiar a español",
         ariaEn: "Cambiar a inglés",
       },
+      services: {
+        badge: "Nuestros Servicios",
+        title: "Qué Hacemos",
+        subtitle:
+          "Soluciones de software a la medida, desde la arquitectura hasta el despliegue.",
+        webDev: {
+          title: "Desarrollo Web Full-Stack",
+          description:
+            "Aplicaciones web robustas y escalables, desde el frontend hasta la API.",
+        },
+        mobileDev: {
+          title: "Desarrollo Móvil",
+          description:
+            "Apps nativas multiplataforma a partir de una sola base de código.",
+        },
+        cloud: {
+          title: "Arquitectura & Cloud",
+          description:
+            "Infraestructura y APIs diseñadas para escalar sin fricción.",
+        },
+        custom: {
+          title: "Sistemas a Medida & Optimización",
+          description:
+            "Refactorización y mejoras de rendimiento para sistemas existentes.",
+          tech: {
+            refactor: "Refactorización",
+            performance: "Performance",
+            maintenance: "Mantenimiento",
+          },
+        },
+      },
     },
   },
   en: {
@@ -48,6 +79,36 @@ const resources = {
         label: "Language",
         ariaEs: "Switch to Spanish",
         ariaEn: "Switch to English",
+      },
+      services: {
+        badge: "Our Services",
+        title: "What We Do",
+        subtitle:
+          "Tailored software solutions, from architecture to deployment.",
+        webDev: {
+          title: "Full-Stack Web Development",
+          description:
+            "Robust, scalable web applications, from the frontend to the API.",
+        },
+        mobileDev: {
+          title: "Mobile Development",
+          description: "Cross-platform native apps from a single codebase.",
+        },
+        cloud: {
+          title: "Architecture & Cloud",
+          description:
+            "Infrastructure and APIs designed to scale without friction.",
+        },
+        custom: {
+          title: "Custom Systems & Optimization",
+          description:
+            "Refactoring and performance improvements for existing systems.",
+          tech: {
+            refactor: "Refactoring",
+            performance: "Performance",
+            maintenance: "Maintenance",
+          },
+        },
       },
     },
   },
