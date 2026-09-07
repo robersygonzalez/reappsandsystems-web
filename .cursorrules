@@ -1,0 +1,20 @@
+# Reglas de Arquitectura y Estándar de Código - ReApps & Systems
+
+## 1. Stack Técnico
+- Framework: Vite + React + TypeScript (Estricto)
+- Estilos: Tailwind CSS v4
+- Estado Global UI: Zustand (selectores atómicos)
+- Estado de Servidor: TanStack Query
+- Iconos: Lucide React
+- Testing: Vitest + React Testing Library
+
+## 2. Principios de Código y Calidad
+- Tipado estricto: Prohibido el uso de 'any'. Definir interfaces/types claras.
+- Arquitectura Modular/Domain-Driven (estilo Fernando Herrera).
+- Módulos funcionales divididos en: /components, /hooks, /interfaces, /services, /store.
+- Código limpio, legible, autocontenido y de alto rendimiento.
+
+## 3. Eficiencia de Tokens y Comunicación
+- Ser extremadamente directo y conciso al refactorizar o generar código.
+- Enviar solo los archivos e interfaces modificados.
+- Evitar explicaciones teóricas innecesarias o texto de relleno.
