@@ -56,6 +56,17 @@ const resources = {
           },
         },
       },
+      stack: {
+        badge: "Ecosistema",
+        title: "Nuestro Stack Tecnológico",
+        subtitle:
+          "Herramientas modernas y probadas en producción, elegidas por rendimiento y escalabilidad.",
+        categories: {
+          frontend: "Frontend",
+          backend: "Backend & API",
+          infra: "Database & Infrastructure",
+        },
+      },
     },
   },
   en: {
@@ -108,6 +119,17 @@ const resources = {
             performance: "Performance",
             maintenance: "Maintenance",
           },
+        },
+      },
+      stack: {
+        badge: "Tech Stack",
+        title: "Our Tech Stack",
+        subtitle:
+          "Modern, production-proven tools chosen for performance and scalability.",
+        categories: {
+          frontend: "Frontend",
+          backend: "Backend & API",
+          infra: "Database & Infrastructure",
         },
       },
     },
