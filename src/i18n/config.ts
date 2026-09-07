@@ -115,6 +115,7 @@ const resources = {
           submit: "Enviar Mensaje",
           submitting: "Enviando...",
           success: "¡Mensaje enviado! Te contactaremos pronto.",
+          error: "No se pudo enviar el mensaje. Intenta de nuevo más tarde.",
         },
       },
       footer: {
@@ -233,6 +234,7 @@ const resources = {
           submit: "Send Message",
           submitting: "Sending...",
           success: "Message sent! We'll be in touch soon.",
+          error: "Couldn't send the message. Please try again later.",
         },
       },
       footer: {

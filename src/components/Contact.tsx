@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { FormEvent } from "react";
-import { Mail, MapPin, Clock, Send, CheckCircle2 } from "lucide-react";
+import { Mail, MapPin, Clock, Send, CheckCircle2, AlertCircle } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -16,16 +16,23 @@ interface FormData {
   email: string;
   subject: string;
   message: string;
+  honeypot: string;
 }
 
-const EMPTY_FORM: FormData = { name: "", email: "", subject: "", message: "" };
+const EMPTY_FORM: FormData = {
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+  honeypot: "",
+};
 
 export function Contact() {
   const { t } = useTranslation();
   const [formData, setFormData] = useState<FormData>(EMPTY_FORM);
-  const [status, setStatus] = useState<"idle" | "submitting" | "submitted">(
-    "idle",
-  );
+  const [status, setStatus] = useState<
+    "idle" | "submitting" | "submitted" | "error"
+  >("idle");
 
   const contactInfo: ContactInfo[] = [
     {
@@ -55,13 +62,27 @@ export function Contact() {
     setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("submitting");
-    window.setTimeout(() => {
+
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        setStatus("error");
+        return;
+      }
+
       setStatus("submitted");
       setFormData(EMPTY_FORM);
-    }, 600);
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -109,6 +130,17 @@ export function Contact() {
           onSubmit={handleSubmit}
           className="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 sm:p-8"
         >
+          <input
+            type="text"
+            name="honeypot"
+            value={formData.honeypot}
+            onChange={(e) => handleChange("honeypot", e.target.value)}
+            tabIndex={-1}
+            autoComplete="off"
+            aria-hidden="true"
+            className="hidden"
+          />
+
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             <div className="sm:col-span-1">
               <label
@@ -198,6 +230,13 @@ export function Contact() {
             <div className="mt-4 flex items-center gap-2 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-4 py-3 text-sm font-medium text-emerald-400">
               <CheckCircle2 className="h-4 w-4 shrink-0" />
               {t("contact.form.success")}
+            </div>
+          )}
+
+          {status === "error" && (
+            <div className="mt-4 flex items-center gap-2 rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm font-medium text-red-400">
+              <AlertCircle className="h-4 w-4 shrink-0" />
+              {t("contact.form.error")}
             </div>
           )}
         </form>
