@@ -90,6 +90,36 @@ const resources = {
             "Sistema full-stack de gestión y ventas, con panel administrativo e inventario en tiempo real.",
         },
       },
+      contact: {
+        badge: "Contacto",
+        title: "¿Tienes un proyecto en mente?",
+        subtitle:
+          "Cuéntanos qué necesitas y te responderemos con una propuesta clara, sin vueltas.",
+        info: {
+          email: { label: "Correo Electrónico", value: "hello@reapps.dev" },
+          location: { label: "Ubicación", value: "Remoto · LatAm" },
+          hours: {
+            label: "Horario de Respuesta",
+            value: "Lun - Vie, 9am - 6pm",
+          },
+        },
+        form: {
+          name: "Nombre",
+          namePlaceholder: "Tu nombre",
+          email: "Email",
+          emailPlaceholder: "tu@email.com",
+          subject: "Asunto",
+          subjectPlaceholder: "¿En qué podemos ayudarte?",
+          message: "Mensaje",
+          messagePlaceholder: "Cuéntanos sobre tu proyecto...",
+          submit: "Enviar Mensaje",
+          submitting: "Enviando...",
+          success: "¡Mensaje enviado! Te contactaremos pronto.",
+        },
+      },
+      footer: {
+        rights: "Todos los derechos reservados.",
+      },
     },
   },
   en: {
@@ -177,6 +207,36 @@ const resources = {
           description:
             "Full-stack sales and management system with an admin dashboard and real-time inventory.",
         },
+      },
+      contact: {
+        badge: "Contact",
+        title: "Have a project in mind?",
+        subtitle:
+          "Tell us what you need and we'll get back to you with a clear proposal, no runaround.",
+        info: {
+          email: { label: "Email", value: "hello@reapps.dev" },
+          location: { label: "Location", value: "Remote · LatAm" },
+          hours: {
+            label: "Response Time",
+            value: "Mon - Fri, 9am - 6pm",
+          },
+        },
+        form: {
+          name: "Name",
+          namePlaceholder: "Your name",
+          email: "Email",
+          emailPlaceholder: "you@email.com",
+          subject: "Subject",
+          subjectPlaceholder: "How can we help?",
+          message: "Message",
+          messagePlaceholder: "Tell us about your project...",
+          submit: "Send Message",
+          submitting: "Sending...",
+          success: "Message sent! We'll be in touch soon.",
+        },
+      },
+      footer: {
+        rights: "All rights reserved.",
       },
     },
   },
