@@ -31,8 +31,8 @@ export function Projects() {
       title: t("projects.portfolio.title"),
       description: t("projects.portfolio.description"),
       tags: ["React", "Vite", "Tailwind CSS", "TypeScript"],
-      demoHref: "#",
-      codeHref: "#",
+      demoHref: "https://www.reappsandsystems.com/",
+      codeHref: "https://github.com/robersygonzalez/reappsandsystems-web",
     },
     {
       key: "ecommerce",
