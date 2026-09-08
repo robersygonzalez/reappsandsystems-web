@@ -75,9 +75,9 @@ const resources = {
         demoLabel: "Demo En Vivo",
         codeLabel: "Código Fuente",
         oilflow: {
-          title: "OilFlow 360",
+          title: "OilFlow 360 – Industrial Telemetry & Asset Dashboard",
           description:
-            "Plataforma SaaS para el monitoreo en tiempo real de operaciones en la industria petrolera.",
+            "Plataforma SaaS de monitoreo industrial y telemetría en tiempo real para activos petroleros. Incluye simulador de eventos en vivo, gestión de estados con Zustand, filtros avanzados y soporte i18n (ES/EN).",
         },
         portfolio: {
           title: "ReApps & Systems Web",
@@ -194,9 +194,9 @@ const resources = {
         demoLabel: "Live Demo",
         codeLabel: "Source Code",
         oilflow: {
-          title: "OilFlow 360",
+          title: "OilFlow 360 – Industrial Telemetry & Asset Dashboard",
           description:
-            "SaaS platform for real-time monitoring of oil industry operations.",
+            "Industrial SaaS platform for real-time monitoring and telemetry of oilfield assets. Includes a live event simulator, state management with Zustand, advanced filters, and i18n support (ES/EN).",
         },
         portfolio: {
           title: "ReApps & Systems Web",

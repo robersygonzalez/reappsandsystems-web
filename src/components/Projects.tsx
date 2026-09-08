@@ -21,9 +21,9 @@ export function Projects() {
       icon: Gauge,
       title: t("projects.oilflow.title"),
       description: t("projects.oilflow.description"),
-      tags: ["React", "NestJS", "PostgreSQL", "TypeScript"],
-      demoHref: "#",
-      codeHref: "#",
+      tags: ["React", "TypeScript", "Tailwind CSS v4", "Zustand", "Recharts", "Lucide"],
+      demoHref: "https://oilflow360.vercel.app/",
+      codeHref: "https://github.com/robersygonzalez/oilflow360",
     },
     {
       key: "portfolio",
@@ -113,6 +113,9 @@ export function Projects() {
                   <div className="mt-auto flex items-center gap-5 border-t border-slate-800 pt-4 text-sm font-medium">
                     <a
                       href={demoHref}
+                      {...(demoHref.startsWith("http")
+                        ? { target: "_blank", rel: "noopener noreferrer" }
+                        : {})}
                       className="inline-flex items-center gap-1.5 text-slate-300 transition-colors hover:text-emerald-400"
                     >
                       <ExternalLink className="h-4 w-4" />
@@ -120,6 +123,9 @@ export function Projects() {
                     </a>
                     <a
                       href={codeHref}
+                      {...(codeHref.startsWith("http")
+                        ? { target: "_blank", rel: "noopener noreferrer" }
+                        : {})}
                       className="inline-flex items-center gap-1.5 text-slate-300 transition-colors hover:text-emerald-400"
                     >
                       <FolderGit2 className="h-4 w-4" />
