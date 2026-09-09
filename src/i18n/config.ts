@@ -89,11 +89,6 @@ const resources = {
           description:
             "Portafolio corporativo de alto rendimiento, con soporte multi-idioma y diseño a medida.",
         },
-        ecommerce: {
-          title: "E-Commerce & ERP App",
-          description:
-            "Sistema full-stack de gestión y ventas, con panel administrativo e inventario en tiempo real.",
-        },
       },
       contact: {
         badge: "Contacto",
@@ -212,11 +207,6 @@ const resources = {
           title: "ReApps & Systems Web",
           description:
             "High-performance corporate portfolio with multi-language support and custom design.",
-        },
-        ecommerce: {
-          title: "E-Commerce & ERP App",
-          description:
-            "Full-stack sales and management system with an admin dashboard and real-time inventory.",
         },
       },
       contact: {

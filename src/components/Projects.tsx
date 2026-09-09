@@ -1,4 +1,4 @@
-import { Gauge, Globe, ShoppingCart, Boxes, ExternalLink, FolderGit2 } from "lucide-react";
+import { Gauge, Globe, Boxes, ExternalLink, FolderGit2 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -42,15 +42,6 @@ export function Projects() {
       tags: ["React", "Vite", "Tailwind CSS", "TypeScript"],
       demoHref: "https://www.reappsandsystems.com/",
       codeHref: "https://github.com/robersygonzalez/reappsandsystems-web",
-    },
-    {
-      key: "ecommerce",
-      icon: ShoppingCart,
-      title: t("projects.ecommerce.title"),
-      description: t("projects.ecommerce.description"),
-      tags: ["React", "NestJS", "PostgreSQL", "Docker"],
-      demoHref: "#",
-      codeHref: "#",
     },
   ];
 
