@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 const QUICK_LINKS = [
+  { href: "#perfil", key: "about" },
   { href: "#servicios", key: "services" },
   { href: "#stack", key: "stack" },
   { href: "#proyectos", key: "projects" },

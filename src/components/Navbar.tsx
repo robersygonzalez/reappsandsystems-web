@@ -26,6 +26,12 @@ export function Navbar() {
           {/* Menú para Pantallas Grandes (Desktop) */}
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
             <a
+              href="#perfil"
+              className="hover:text-emerald-400 transition-colors"
+            >
+              {t("nav.about")}
+            </a>
+            <a
               href="#servicios"
               className="hover:text-emerald-400 transition-colors"
             >
@@ -72,6 +78,13 @@ export function Navbar() {
       {/* Menú Desplegable en Móvil */}
       {isOpen && (
         <div className="md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-4 flex flex-col gap-3 text-slate-300">
+          <a
+            href="#perfil"
+            onClick={() => setIsOpen(false)}
+            className="py-2 hover:text-emerald-400"
+          >
+            {t("nav.about")}
+          </a>
           <a
             href="#servicios"
             onClick={() => setIsOpen(false)}

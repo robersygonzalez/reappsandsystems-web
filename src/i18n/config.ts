@@ -6,6 +6,7 @@ const resources = {
   es: {
     translation: {
       nav: {
+        about: "Perfil",
         services: "Servicios",
         stack: "Tecnología",
         projects: "Proyectos",
@@ -19,6 +20,51 @@ const resources = {
           "Construimos aplicaciones web y móviles de alto rendimiento con arquitectura limpia y tecnologías modernas.",
         ctaPrimary: "Iniciar Proyecto",
         ctaSecondary: "Ver Proyectos",
+      },
+      about: {
+        badge: "Perfil Profesional",
+        title: "Sobre el Fundador",
+        subtitle:
+          "Trayectoria, credenciales y respaldo corporativo de R.E APPS & SYSTEMS LLC.",
+        profile: {
+          name: "Ing. Gilberto González",
+          role:
+            "Principal Software Engineer & IT Infrastructure Consultant | Founder of R.E APPS & SYSTEMS LLC",
+          phoneLabel: "Teléfono (EE. UU.)",
+          phoneValue: "+1 (786) 586-2070",
+          emailLabel: "Correo Electrónico",
+          emailValue: "robersygonzalez@gmail.com",
+          locationLabel: "Ubicación",
+          locationValue: "Saint Cloud / Orlando, Florida, USA",
+        },
+        company: {
+          badge: "Empresa Registrada",
+          title: "R.E APPS & SYSTEMS LLC",
+          registrationLabel: "Registro Estatal",
+          registrationValue: "Document #L24000381747",
+          einLabel: "IRS EIN",
+          einValue: "99-4804234",
+          servicesLabel: "Servicios de la Firma",
+          servicesValue:
+            "Consultoría tecnológica, desarrollo web/móvil full-stack (React, Node, NestJS), soluciones ERP y gestión de infraestructura de redes para empresas en EE. UU.",
+        },
+        credentials: {
+          badge: "Méritos & Trayectoria",
+          title: "Perfil Profesional & Méritos",
+          educationLabel: "Título Académico",
+          educationValue:
+            "Ingeniero en Informática — Universidad Centroccidental Lisandro Alvarado (UCLA), 2005",
+          experienceLabel: "Experiencia",
+          experienceValue:
+            "+18 años liderando proyectos de TI, desarrollo de software y redes",
+          achievementsLabel: "Logros Clave",
+          achievements: [
+            "Reducción del 40% en costos de TI mediante VPNs seguras y soporte remoto.",
+            "Automatización de nómina y gestión (ServiSegNom), reduciendo tiempos de 16 horas a 10 minutos.",
+            "Arquitectura MERN/TypeScript (SIGE-Pro) con 55% de optimización en reportes.",
+            "+270 horas de formación continua en tecnologías modernas (Cisco CCNA, Cloud, NestJS, Cybersecurity).",
+          ],
+        },
       },
       language: {
         label: "Idioma",
@@ -126,6 +172,7 @@ const resources = {
   en: {
     translation: {
       nav: {
+        about: "Profile",
         services: "Services",
         stack: "Tech Stack",
         projects: "Projects",
@@ -139,6 +186,51 @@ const resources = {
           "Building high-performance web and mobile applications with clean architecture and modern tech stacks.",
         ctaPrimary: "Start Project",
         ctaSecondary: "View Projects",
+      },
+      about: {
+        badge: "Professional Profile",
+        title: "About the Founder",
+        subtitle:
+          "Background, credentials, and corporate standing of R.E APPS & SYSTEMS LLC.",
+        profile: {
+          name: "Eng. Gilberto González",
+          role:
+            "Principal Software Engineer & IT Infrastructure Consultant | Founder of R.E APPS & SYSTEMS LLC",
+          phoneLabel: "Phone (USA)",
+          phoneValue: "+1 (786) 586-2070",
+          emailLabel: "Email",
+          emailValue: "robersygonzalez@gmail.com",
+          locationLabel: "Location",
+          locationValue: "Saint Cloud / Orlando, Florida, USA",
+        },
+        company: {
+          badge: "Registered Company",
+          title: "R.E APPS & SYSTEMS LLC",
+          registrationLabel: "State Registration",
+          registrationValue: "Document #L24000381747",
+          einLabel: "IRS EIN",
+          einValue: "99-4804234",
+          servicesLabel: "Firm Services",
+          servicesValue:
+            "Technology consulting, full-stack web/mobile development (React, Node, NestJS), ERP solutions, and network infrastructure management for U.S. businesses.",
+        },
+        credentials: {
+          badge: "Merits & Background",
+          title: "Professional Profile & Merits",
+          educationLabel: "Academic Degree",
+          educationValue:
+            "Computer Engineer — Universidad Centroccidental Lisandro Alvarado (UCLA), 2005",
+          experienceLabel: "Experience",
+          experienceValue:
+            "18+ years leading IT, software development, and networking projects",
+          achievementsLabel: "Key Achievements",
+          achievements: [
+            "40% reduction in IT costs through secure VPNs and remote support.",
+            "Payroll and management automation (ServiSegNom), cutting processing time from 16 hours to 10 minutes.",
+            "MERN/TypeScript architecture (SIGE-Pro) achieving 55% optimization in reporting.",
+            "270+ hours of continuing education in modern technologies (Cisco CCNA, Cloud, NestJS, Cybersecurity).",
+          ],
+        },
       },
       language: {
         label: "Language",
