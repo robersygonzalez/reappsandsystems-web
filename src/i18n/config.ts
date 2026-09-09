@@ -79,6 +79,11 @@ const resources = {
           description:
             "Plataforma SaaS de monitoreo industrial y telemetría en tiempo real para activos petroleros. Incluye simulador de eventos en vivo, gestión de estados con Zustand, filtros avanzados y soporte i18n (ES/EN).",
         },
+        novacraft: {
+          title: "NovaCraft ERP & Store",
+          description:
+            "Plataforma SaaS Full-Stack (Demo de estado global) que sincroniza en tiempo real una tienda E-Commerce con un panel de control ERP/Inventario y métricas KPI.",
+        },
         portfolio: {
           title: "ReApps & Systems Web",
           description:
@@ -197,6 +202,11 @@ const resources = {
           title: "OilFlow 360 – Industrial Telemetry & Asset Dashboard",
           description:
             "Industrial SaaS platform for real-time monitoring and telemetry of oilfield assets. Includes a live event simulator, state management with Zustand, advanced filters, and i18n support (ES/EN).",
+        },
+        novacraft: {
+          title: "NovaCraft ERP & Store",
+          description:
+            "Full-stack SaaS platform (global state demo) that syncs an E-Commerce store in real time with an ERP/Inventory dashboard and KPI metrics.",
         },
         portfolio: {
           title: "ReApps & Systems Web",

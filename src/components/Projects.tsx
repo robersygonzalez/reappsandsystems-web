@@ -1,4 +1,4 @@
-import { Gauge, Globe, ShoppingCart, ExternalLink, FolderGit2 } from "lucide-react";
+import { Gauge, Globe, ShoppingCart, Boxes, ExternalLink, FolderGit2 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -24,6 +24,15 @@ export function Projects() {
       tags: ["React", "TypeScript", "Tailwind CSS v4", "Zustand", "Recharts", "Lucide"],
       demoHref: "https://oilflow360.vercel.app/",
       codeHref: "https://github.com/robersygonzalez/oilflow360",
+    },
+    {
+      key: "novacraft",
+      icon: Boxes,
+      title: t("projects.novacraft.title"),
+      description: t("projects.novacraft.description"),
+      tags: ["React", "TypeScript", "Zustand", "Tailwind CSS v4", "Recharts", "Lucide React"],
+      demoHref: "https://novacraft-erp.vercel.app",
+      codeHref: "https://github.com/robersygonzalez/novacraft-erp",
     },
     {
       key: "portfolio",
