@@ -135,6 +135,11 @@ const resources = {
           description:
             "Portafolio corporativo de alto rendimiento, con soporte multi-idioma y diseño a medida.",
         },
+        scanprofit: {
+          title: "ScanProfit Suite",
+          description:
+            "Herramienta SaaS de arbitraje para Amazon FBA con extensión de Chrome automatizada y backend en NestJS.",
+        },
       },
       contact: {
         badge: "Contacto",
@@ -299,6 +304,11 @@ const resources = {
           title: "ReApps & Systems Web",
           description:
             "High-performance corporate portfolio with multi-language support and custom design.",
+        },
+        scanprofit: {
+          title: "ScanProfit Suite",
+          description:
+            "SaaS arbitrage tool for Amazon FBA with an automated Chrome extension and a NestJS backend.",
         },
       },
       contact: {

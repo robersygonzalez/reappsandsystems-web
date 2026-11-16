@@ -1,4 +1,4 @@
-import { Gauge, Globe, Boxes, ExternalLink, FolderGit2 } from "lucide-react";
+import { Gauge, Globe, Boxes, ScanLine, ExternalLink, FolderGit2 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -8,7 +8,7 @@ interface Project {
   title: string;
   description: string;
   tags: string[];
-  demoHref: string;
+  demoHref?: string;
   codeHref: string;
 }
 
@@ -42,6 +42,14 @@ export function Projects() {
       tags: ["React", "Vite", "Tailwind CSS", "TypeScript"],
       demoHref: "https://www.reappsandsystems.com/",
       codeHref: "https://github.com/robersygonzalez/reappsandsystems-web",
+    },
+    {
+      key: "scanprofit",
+      icon: ScanLine,
+      title: t("projects.scanprofit.title"),
+      description: t("projects.scanprofit.description"),
+      tags: ["Chrome Extension (Manifest V3)", "NestJS Backend", "TypeScript"],
+      codeHref: "https://github.com/robersygonzalez/scanprofit-suite",
     },
   ];
 
@@ -111,16 +119,18 @@ export function Projects() {
                   </ul>
 
                   <div className="mt-auto flex items-center gap-5 border-t border-slate-800 pt-4 text-sm font-medium">
-                    <a
-                      href={demoHref}
-                      {...(demoHref.startsWith("http")
-                        ? { target: "_blank", rel: "noopener noreferrer" }
-                        : {})}
-                      className="inline-flex items-center gap-1.5 text-slate-300 transition-colors hover:text-emerald-400"
-                    >
-                      <ExternalLink className="h-4 w-4" />
-                      {t("projects.demoLabel")}
-                    </a>
+                    {demoHref && (
+                      <a
+                        href={demoHref}
+                        {...(demoHref.startsWith("http")
+                          ? { target: "_blank", rel: "noopener noreferrer" }
+                          : {})}
+                        className="inline-flex items-center gap-1.5 text-slate-300 transition-colors hover:text-emerald-400"
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                        {t("projects.demoLabel")}
+                      </a>
+                    )}
                     <a
                       href={codeHref}
                       {...(codeHref.startsWith("http")
